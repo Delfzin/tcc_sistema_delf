@@ -1,0 +1,13 @@
+# Dependencias instaladas (cada pessoa roda npm install)
+node_modules/
+
+# Segredos: NUNCA enviar para o GitHub. O repositorio e publico.
+.env
+.env.*
+!.env.example
+
+# Arquivos gerados
+*.log
+coverage/
+.DS_Store
+Thumbs.db

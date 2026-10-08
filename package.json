@@ -1,0 +1,18 @@
+{
+  "name": "delf-api",
+  "version": "0.1.0",
+  "private": true,
+  "description": "DELF: banco de dados e API do sistema que mostra, em tempo real, quais aparelhos da academia estao livres, ocupados ou sem sinal.",
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=20.12"
+  },
+  "scripts": {
+    "migrar": "node scripts/migrar.js",
+    "semear": "node scripts/semear.js",
+    "test": "node scripts/preparar-banco-de-teste.js && node --test --test-concurrency=1"
+  },
+  "dependencies": {
+    "pg": "^8.23.1"
+  }
+}
